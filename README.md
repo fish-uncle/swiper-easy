@@ -1,15 +1,15 @@
-# react-easy-swiper
+# swiper-easy
 
 ![version](https://img.shields.io/badge/version-v1.0.0-brightgreen.svg?style=flat-square) [![React](https://img.shields.io/badge/react-16.x.x-brightgreen.svg?style=flat-square)](https://github.com/facebook/react) [![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](http://opensource.org/licenses/MIT) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 
 ### 下载
 ```
-npm install react-easy-swiper --save
+npm install swiper-easy --save
 ```
 
 ### 使用说明
 ```javascript
-import EasySwiper from 'react-easy-swiper';
+import SwiperEasy from 'swiper-easy';
 class Demo extends React.Component {
   componentDidMount(){
     console.log(this.refs.s);
@@ -33,9 +33,9 @@ class Demo extends React.Component {
       };
       return (
         <div>
-          <EasySwiper ref='s' className='diy-className' options={options}>
+          <SwiperEasy ref='s' className='diy-className' options={options}>
             {list.map((item, index) => <div key={index}>{item}</div>)}
-          </EasySwiper>
+          </SwiperEasy>
         </div>
       );
     }
