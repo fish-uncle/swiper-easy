@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 let sw = {};
 
-class EasySwiper extends React.Component {
+class SwiperEasy extends React.Component {
   constructor() {
     super();
     const id = Math.random().toString(36).replace('0.', '');
@@ -133,8 +133,8 @@ class EasySwiper extends React.Component {
   }
 }
 
-EasySwiper.propTypes = {
+SwiperEasy.propTypes = {
   options: PropTypes.object
 };
 
-export default EasySwiper;
+export default SwiperEasy;

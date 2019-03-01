@@ -1,7 +1,7 @@
 {
-  "name": "react-easy-swiper",
+  "name": "swiper-easy",
   "version": "1.0.0",
-  "description": "react Swiper 组建",
+  "description": "react Swiper 组件",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:fish-uncle/react-easy-swiper.git"
+    "url": "git@github.com:fish-uncle/swiper-easy.git"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.9",
