@@ -11,8 +11,17 @@ npm install swiper-easy --save
 ```javascript
 import SwiperEasy from 'swiper-easy';
 class Demo extends React.Component {
+  
+  state={
+     list:[
+        'swiper1',
+        'swiper2',
+        'swiper3',
+     ]
+  }
+  
   componentDidMount(){
-    console.log(this.refs.s);
+      console.log(this.refs.s);
   }
   
   render() {
