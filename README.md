@@ -62,10 +62,10 @@ class Demo extends React.Component {
 ```
 // e.g.
 
-<EasySwiper ref='swiper' className='diy-className' options={options}>
+<SwiperEasy ref='swiper' className='diy-className' options={options}>
    <div>swiper1</div>
    <div>swiper2</div>
-</EasySwiper>
+</SwiperEasy>
 
 // this.refs.swiper.update();
 ```
