@@ -24,7 +24,7 @@ class SwiperEasy extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    this.update();
+    prevProps.children.length !== this.props.children.length ? this.update() : void 0
   }
 
   componentWillReceiveProps(nextProps) {
@@ -56,9 +56,10 @@ class SwiperEasy extends React.Component {
     sw[id].slideToLoop(index, speed, runCallbacks);
   }
 
-  update(updateTranslate) {
-    const {id} = this.state;
-    sw[id].update(updateTranslate);
+  update() {
+    const {id, className} = this.state;
+    sw[id].destroy(false);
+    sw[id] = new Swiper(`.${className}-${id}`, this.props.options || {})
   }
 
   destroy(deleteInstance, cleanupStyles) {
