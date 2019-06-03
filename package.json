@@ -1,6 +1,6 @@
 {
   "name": "swiper-easy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "react Swiper 组件",
   "main": "dist/index.js",
   "scripts": {
@@ -33,7 +33,8 @@
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.8.3"
+    "react": "^16.8.3",
+    "swiper": "^4.5.0"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org"

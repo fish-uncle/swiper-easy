@@ -1,5 +1,5 @@
-import Swiper from './lib/swiper.min';
-import './lib/swiper.min.css';
+import Swiper from 'swiper/dist/js/swiper.min';
+import 'swiper/dist/css/swiper.css'
 import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 
@@ -103,7 +103,7 @@ class SwiperEasy extends React.Component {
   }
 
   render() {
-    const {className, options = {}, ...others} = this.props;
+    const {className = '', options = {}, ...others} = this.props;
     let navigationHtml = null, paginationHtml = null, scrollbarHtml = null;
     if (options.navigation) {
       navigationHtml = <Fragment>
@@ -135,7 +135,8 @@ class SwiperEasy extends React.Component {
 }
 
 SwiperEasy.propTypes = {
-  options: PropTypes.object
+  options: PropTypes.object,
+  className: PropTypes.string
 };
 
 export default SwiperEasy;
